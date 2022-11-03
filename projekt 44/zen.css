@@ -1,0 +1,442 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/zen.jpg);
+    background-repeat: no-repeat;
+    background-size: 2500px auto;
+    color: #032012;
+    margin: 0;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+/* Boksen bag teksten */
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #fff8e5;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+/* Til Info */
+.spg p {
+    text-align: left;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0.8em;
+    margin-left: 0.6em;
+}
+
+.svar p {
+    text-align: left;
+    line-height: 50%;
+    padding: 0;
+    margin: 0.8em;
+}
+/* Til om haven */
+.spg2 p {
+    text-align: left;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0.8em;
+    margin-left: 0.6em;
+    width: 80%;
+    position: relative;
+    /* Sætter den i midten */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 2em;
+}
+
+.svar2 p {
+    text-align: left;
+    /* line-height: 50%; */
+    padding: 0;
+    margin: 0.8em;
+    width: 80%;
+    position: relative;
+    /* Sætter den i midten */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#billedehave {
+    max-width: 80%;
+    max-height: auto;
+    display: block;
+    /* sætter billede i center */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Overskrift p {
+    list-style: none;
+    margin: 0;
+    padding-right: 2em;
+    padding-top: 0.25em;
+    font-size: 1.6em;
+    font-family: blakely, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: -0.5em;
+    margin-left: 1.8em;
+    color: #285e48;
+}
+
+h1 { 
+    list-style: none;
+    margin: 0;
+    padding-right: 2em;
+    padding-top: .5em;
+    font-size: 3em;
+    font-family: blakely, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: -0.8em;
+    margin-top: -0.5em;
+    margin-left: 1.8em;
+    color: #285e48;
+
+}
+
+h2 {
+    margin: 1em;
+    text-align: center;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    text-align: right;
+    background-color: #49826f;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+}
+
+nav ul {
+    list-style: inline;
+    margin: 0;
+    padding-top: 0.25em;
+    font-size: 1.4em;
+    font-family: blakely, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+nav li {
+    display: inline; 
+    /* alle elementer i en linje */
+    padding-left: 2em;
+    border-right: 1px solid #fff8e5;
+    /* laver en border kun på højre side til deling af elementer */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* top og bottom laver stregerne højere */
+    padding-right: 2em;;
+    margin: 2;
+}
+
+nav li:last-child {
+border:none;
+}
+/* fjerner den sidste streg */
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #fff8e5
+}
+
+nav a:visited {
+    color: #fff8e5;
+}
+
+nav a:hover {
+    color: #285e48;
+}
+
+
+.logozen {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+li {
+    font-size: 90%;
+}
+
+
+.button-css {
+    padding: 10px;
+    max-width: 180px;
+    color: #fff8e5;
+    border: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: #49826f;
+    font-size: 1.4em;
+    font-family: blakely, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin: auto;
+    /* Sætter den i midten */
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.button-css a {
+    text-decoration: none;
+}
+
+.button-css a:link {
+    color:#fff8e5 ;
+}
+
+.button-css a:visited {
+    color:#fffbf0 ;
+}
+
+.button-css:hover {
+    background-color: #285e48;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.formulartekst {
+    width:70%;
+    color: #49826f;
+
+}
+
+#submit{
+    background-color: #49826f;
+    cursor: pointer;
+    color:#fffbf0;
+    border: none;
+    border-radius: 8px;
+    font-size:16px;
+    padding:10px 24px;
+    transition-duration: 0.4s;
+    font-family: blakely, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    right: 47%;
+}
+
+#submit:hover{
+background-color:#285e48;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.formularbeskrivelse p {
+    max-width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+fieldset {
+    display: inline;
+    margin-left: 15em;
+    justify-content: center;
+    
+}
+
+.indhold {
+    padding-left: 10em;
+    width: 40em;
+    ;
+}
+
+legend {
+    text-align: center;
+    font-weight: 600;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    text-align: right;
+    font-size: 1.1em;
+    background-color: #49826f;
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 13em;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff8e5;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: #fff8e5;
+}
+
+footer a:visited {
+    color: #fff8e5;
+}
+
+footer a:hover {
+    color:#285e48;
+}
+
+
+
+/* deler i 3 kolonner */
+.onethird {
+    float: left;
+    width: 33%;
+    /* skub teksten mod højre */
+    padding-left: 10em;
+    padding-right: 2em;
+    text-align: left;
+    border-right: 1px solid #fff8e5;
+    /* sætter højden på stregen */
+    min-height: 11.5em;
+
+}
+/* fjerner den sidste border */
+.onethird:last-child {
+    border: none;
+}
+
+
+.onethird p {
+    clear: left;
+    text-align: left;
+    padding-left: 0.3em;
+}
+
+
+.top {
+    display: inline;
+    /* så borderen følger med teksten */
+    font-weight: 300;
+    border-bottom: 1px solid #fff8e5;
+    padding-left:0.3em ;
+    padding-right: 0.3em ;
+}
+
+#some li {
+    display: inline;
+    padding: 0.2em;
+    position: relative;
+    right: 2.3em;
+}
+
+
+/* SVG filterne, ændrer farverne så de passer til farverne på de andre links og links der hover */
+/* Filteret er udregnet med følgende link https://codepen.io/sosuke/pen/Pjoqqp */
+.svg {
+    width: 40px;
+    height: 40px;
+    filter: invert(95%) sepia(8%) saturate(649%) hue-rotate(329deg) brightness(101%) contrast(105%);
+}
+
+.svg:hover {
+    filter: invert(28%) sepia(58%) saturate(386%) hue-rotate(104deg) brightness(96%) contrast(90%);
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:300px;
+    width:400px;
+}
+
+.mapouter{ 
+    position:relative;
+    text-align:right;
+    /* height:350px; */
+    width:600px;
+    display: block;
+    top: -23em;
+    left: 50%;
+    margin-bottom: -2em;
+}
+
+.googlemap {
+    position:relative;
+    text-align:right;
+    height:350px;
+    width:600px;
+    display: block;
+    top: -27em;
+    left: 50%;
+    margin-bottom: -2em;
+}
+
+.omhavenvideo {
+    width: 70%;
+    height: auto;
+    position: relative;
+    /* Sætter den i midten */
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+
+}
+
+#havebilleder {
+    position:relative;
+    text-align:right;
+    height:30px;
+    width:400px;
+    display: block;
+    top: -73em;
+    left: 40%;
+    margin-bottom: -16em;
+}
+
+textarea {
+    resize: none;
+}
